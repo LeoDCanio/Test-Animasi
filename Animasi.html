@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Animasi.css">
+    <title>Login to Dashboard Transition</title>
+</head>
+<body>
+    <div id="login" class="page active">
+        <h2>Login Page</h2>
+        <button onclick="goToDashboard()">Login</button>
+    </div>
+
+    <div id="dashboard" class="page">
+        <h2>Dashboard</h2>
+        <p>Welcome to your dashboard!</p>
+    </div>
+
+    <script>
+        function goToDashboard() {
+            // Menyembunyikan halaman login dan menampilkan dashboard dengan transisi yang diinginkan
+            document.getElementById("login").classList.remove("active");
+            document.getElementById("dashboard").classList.add("active");
+        }
+        <script src="Animasi.js"></script>
+</body>
+</html>
